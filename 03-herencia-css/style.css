@@ -1,0 +1,58 @@
+body {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+h1 {
+  color: rgb(177, 108, 19);
+  font-family: "Aleo", serif;
+}
+
+#miparrafo {
+  color: chocolate;
+}
+.p {
+  color: orange;
+  font-family: "Aleo", serif;
+}
+
+span {
+  color: green !important;
+}
+
+/* ejemplo de posicion */
+
+.parent{
+  background-color: bisque;
+  width: 500ppx;
+  height: 300px;
+  border: 5px solid green;
+  border-radius: 15px;
+  position: sticky;
+  top: 20%;
+}
+
+.parent h1{
+  position: absolute;
+  font-size: 4.5rem;
+  left: 50px;
+  bottom: 20px;
+  z-index: 2;
+
+}
+
+.parent img{
+  position: absolute;
+}
+
+.orange{
+  right: 0;
+  top: 10%;
+  transform: rotate(32deg);
+}
+
+.leaf{
+  bottom: 15%;
+  left: -3%;
+  z-index: 3;
+}
