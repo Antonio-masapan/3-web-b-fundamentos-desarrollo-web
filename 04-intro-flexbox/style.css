@@ -28,27 +28,27 @@
 
 /* estilos de header */
 
-header{
-    background-color: aqua;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
+header {
+  background-color: aqua;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
 }
 
-main{
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
+main {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
-.main-content{
-    width: 70%;
-    height: 300px;
-    background-color: aquamarine;
+.main-content {
+  width: 70%;
+  height: 300px;
+  background-color: aquamarine;
 }
 
-.statistics{
-    width: 30%;
-    height: 300px;
-    background-color: cadetblue;
+.statistics {
+  width: 30%;
+  height: 300px;
+  background-color: cadetblue;
 }
