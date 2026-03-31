@@ -1,0 +1,270 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN BASE Y RESETEO
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   2. HEADER
+   ========================================================================== */
+header{
+background-color:#ffffff;
+padding:15px 30px;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:22px;
+color:#2c3e50;
+}
+
+
+/* contenedor usuario */
+
+.usuario{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+
+/* icono campana */
+
+.campana{
+width:24px;
+height:24px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.campana:hover{
+transform:scale(1.1);
+}
+
+
+/* texto usuario */
+
+.usuario p{
+font-weight:bold;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+
+/* círculo iniciales */
+
+.usuario span{
+background-color:#3498db;
+color:white;
+padding:4px 8px;
+border-radius:50%;
+font-size:13px;
+}
+/* ==========================================================================
+   3. LAYOUT PRINCIPAL
+   ========================================================================== */
+
+main {
+  display: flex;
+  min-height: 80vh;
+  padding: 20px;
+  gap: 20px;
+  flex: 1;
+}
+
+/* ==========================================================================
+   4. SIDEBAR / NAV
+   ========================================================================== */
+
+nav {
+  background-color: #2c3e50;
+  color: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+nav h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+nav li a:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+/* ==========================================================================
+   5. CONTENEDOR DASHBOARD
+   ========================================================================== */
+
+main > div {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+}
+
+/* ==========================================================================
+   6. TARJETAS DEL DASHBOARD
+   ========================================================================== */
+
+main > div > div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+}
+
+main > div > div h3,
+main > div > div h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   7. TARJETAS DE INFORMACIÓN
+   ========================================================================== */
+
+#Pago_del_mes {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#Departamentos_Adeudo,
+#Tickes_de_mantenimiento {
+  display: block;
+  font-size: 14px;
+  color: #e74c3c;
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   8. LISTA DE PAGOS
+   ========================================================================== */
+
+main > div > div ul {
+  list-style: none;
+}
+
+main > div > div li p {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f4f7f6;
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   9. BOTONES ACCESOS DIRECTOS
+   ========================================================================== */
+
+.btn-info {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+
+  background-color: #f8f9fa;
+  color: #2c3e50;
+
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-info span {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.btn-info:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+/* ==========================================================================
+   10. FOOTER
+   ========================================================================== */
+
+footer {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-top: 1px solid #e9ecef;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 16px;
+  color: #7f8c8d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .btn-info {
+  width: auto;
+  margin-bottom: 0;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+}
+
+footer .btn-info:hover {
+  background-color: #c0392b;
+}
