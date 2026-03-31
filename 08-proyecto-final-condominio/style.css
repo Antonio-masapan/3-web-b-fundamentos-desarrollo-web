@@ -1,6 +1,3 @@
-/* ==========================================================================
-   1. CONFIGURACIÓN BASE Y RESETEO
-   ========================================================================== */
 
 * {
   margin: 0;
@@ -17,9 +14,7 @@ body {
   flex-direction: column;
 }
 
-/* ==========================================================================
-   2. HEADER
-   ========================================================================== */
+/* HEADER */
 header{
 background-color:#ffffff;
 padding:15px 30px;
@@ -34,18 +29,11 @@ header h1{
 font-size:22px;
 color:#2c3e50;
 }
-
-
-/* contenedor usuario */
-
 .usuario{
 display:flex;
 align-items:center;
 gap:15px;
 }
-
-
-/* icono campana */
 
 .campana{
 width:24px;
@@ -58,18 +46,12 @@ transition:0.2s;
 transform:scale(1.1);
 }
 
-
-/* texto usuario */
-
 .usuario p{
 font-weight:bold;
 display:flex;
 align-items:center;
 gap:10px;
 }
-
-
-/* círculo iniciales */
 
 .usuario span{
 background-color:#3498db;
@@ -78,10 +60,9 @@ padding:4px 8px;
 border-radius:50%;
 font-size:13px;
 }
-/* ==========================================================================
-   3. LAYOUT PRINCIPAL
-   ========================================================================== */
 
+
+/* GENEAL */
 main {
   display: flex;
   min-height: 80vh;
@@ -89,11 +70,7 @@ main {
   gap: 20px;
   flex: 1;
 }
-
-/* ==========================================================================
-   4. SIDEBAR / NAV
-   ========================================================================== */
-
+/* NAVEGACIÓN LATERAL PARTE DE CONDOMINIOS LISTA */
 nav {
   background-color: #2c3e50;
   color: white;
@@ -131,40 +108,41 @@ nav li a:hover {
   color: white;
 }
 
-/* ==========================================================================
-   5. CONTENEDOR DASHBOARD
-   ========================================================================== */
+/* PANEL PRINCIPAL O CONTENEDOR PADRE */
 
-main > div {
+.panel_principal {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-content: flex-start;
 }
-
-/* ==========================================================================
-   6. TARJETAS DEL DASHBOARD
-   ========================================================================== */
-
-main > div > div {
+/* COBRANZA DEL MES */
+.Cobranza_mes {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-
   flex: 1 1 calc(33.333% - 20px);
   min-width: 280px;
 }
-
-main > div > div h3,
-main > div > div h4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  color: #7f8c8d;
-  margin-bottom: 15px;
+/* CUOTAS PENDIENTES */
+.Cuotas_pendientes{
+    background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+}
+/* TICKETS DE MANTENIMIENTO */
+.Tickets_mantenimiento {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
 }
 
 /* ==========================================================================
@@ -189,11 +167,26 @@ main > div > div h4 {
    8. LISTA DE PAGOS
    ========================================================================== */
 
-main > div > div ul {
+.Pagos_recibidos {
+    background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+  list-style: none;
+  
+}
+.Aceeso_directo{
+      background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
   list-style: none;
 }
-
-main > div > div li p {
+.Pagos_recibidos li p {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
